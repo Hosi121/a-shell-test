@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # データの生成
-x = np.linspace(0, 2*np.pi, 100)  # 0から2πまでの間に100点を生成
-y1 = np.sin(x)  # サイン関数
-y2 = np.cos(x)  # コサイン関数
+x = np.linspace(0, 2*np.pi, 100)  
+y1 = np.sin(x)  
+y2 = np.cos(x)  
 
 # グラフの描画
 plt.figure(figsize=(10, 6))
@@ -18,4 +18,8 @@ plt.ylabel('y')
 plt.legend()
 plt.grid(True)
 
+# グラフを画像として保存
+plt.savefig("graph.png")
+
 # グラフの表示
+plt.show()
